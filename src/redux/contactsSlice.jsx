@@ -80,15 +80,6 @@ export const contactsSlice = createSlice({
       state.contacts.items.splice(index, 1);
     },
     [deleteContact.rejected]: handleRejected,
-
-    // addMyContact(state, action) {
-    //   state.contacts.items.unshift(action.payload);
-    // },
-    // deleteMyContact(state, action) {
-    //   state.contacts.items = state.contacts.items.filter(
-    //     contact => contact.id !== action.payload
-    //   );
-    // },
   },
 });
 

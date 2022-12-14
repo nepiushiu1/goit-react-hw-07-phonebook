@@ -60,17 +60,22 @@ export default function ContactForm() {
       return;
     }
 
-    const contact = {
-      name,
-      number,
-    };
+    // const contact = {
+    //   name,
+    //   number,
+    // };
 
-    dispatch(addContact(contact));
+    dispatch(addContact({ name, number }));
     resetForm();
   };
 
   return (
-    <form onSubmit={handleSubmit} className={css.form} id="form">
+    <form
+      onSubmit={handleSubmit}
+      className={css.form}
+      initialValues={{ name: '', number: '' }}
+      id="form"
+    >
       <p className={css.name}>Name</p>
       <input
         className={css.input}
