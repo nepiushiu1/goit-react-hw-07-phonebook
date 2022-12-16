@@ -1,20 +1,10 @@
-// import { useDispatch } from 'react-redux';
-// import { setFilter } from 'redux/contactsSlice';
-
-// const Filter = () => {
-//   const dispatch = useDispatch();
-//   const updateFilter = event => {
-//     dispatch(setFilter(event.currentTarget.value));
-//   };
-
-// import { FilterInput, FilterTitle } from './Filter.styled';
 import { useDispatch } from 'react-redux';
-import { filterMyContact } from 'redux/contactsSlice';
+import { setFilter } from 'redux/filterSlise';
 
 const Filter = () => {
   const dispatch = useDispatch();
   const changeFilter = event => {
-    dispatch(filterMyContact(event.currentTarget.value));
+    dispatch(setFilter(event.currentTarget.value));
   };
   return (
     <>

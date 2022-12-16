@@ -1,22 +1,3 @@
-// https://6397019877359127a0298964.mockapi.io/contacts/
-//6397019877359127a0298964.mockapi.io/contacts/
-
-// const BASE_URL='https://6397019877359127a0298964.mockapi.io/contacts/'
-
-// import { createAsyncThunk } from '@reduxjs/toolkit';
-
-// import axios from 'axios';
-
-// axios.defaults.baseURL =
-//   'https://6397019877359127a0298964.mockapi.io/contacts/';
-// export const fetchContacts = createAsyncThunk();
-
-// () => async dispatch => {
-//   try {
-//     const response = await axios.get('/contacts');
-//   } catch (e) {}
-// };
-
 import axios from 'axios';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
